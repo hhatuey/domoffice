@@ -1,0 +1,33 @@
+{
+  "name": "react-core-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/react-core-e2e/src",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/react-core-e2e/cypress.config.ts",
+        "testingType": "e2e",
+        "devServerTarget": "react-core:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "react-core:serve:production"
+        },
+        "ci": {
+          "devServerTarget": "react-core:serve-static"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/react-core-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "implicitDependencies": ["react-core"],
+  "tags": []
+}
