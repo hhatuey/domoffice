@@ -7,6 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
+import {PROFILE_FEATURE_KEY, profileReducer} from '@domoffice/profile';
 
 import {
   REACT_CORE_FEATURE_KEY,
@@ -18,7 +19,7 @@ const root = ReactDOM.createRoot(
 );
 
 const store = configureStore({
-  reducer: { [REACT_CORE_FEATURE_KEY]: reactCoreReducer },
+  reducer: { [REACT_CORE_FEATURE_KEY]: reactCoreReducer, [PROFILE_FEATURE_KEY]: profileReducer },
   // Additional middleware can be passed to this array
   middleware: (getDefaultMiddleware) => getDefaultMiddleware(),
   devTools: process.env.NODE_ENV !== 'production',
