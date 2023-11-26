@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@domoffice/profile": ["packages/profile/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
