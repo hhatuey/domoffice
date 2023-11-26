@@ -7,7 +7,7 @@ import {
   PayloadAction,
 } from '@reduxjs/toolkit';
 
-export const REACT_CORE_FEATURE_KEY = 'reactCore';
+export const REACT_CORE_FEATURE_KEY = 'reactCoreReducer';
 
 /*
  * Update these interfaces according to your requirements.
