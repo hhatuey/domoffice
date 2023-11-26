@@ -1,4 +1,4 @@
-import { Route, Link } from 'react-router-dom';
+import { Route, Routes, Link } from 'react-router-dom';
 
 import styles from './profile.module.css';
 
@@ -15,12 +15,14 @@ export function Profile(props: ProfileProps) {
           <Link to="/">packages/profile/src/lib/profile root</Link>
         </li>
       </ul>
-      <Route
-        path="/"
-        element={
-          <div>This is the packages/profile/src/lib/profile root route.</div>
-        }
-      />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div>This is the packages/profile/src/lib/profile root route.</div>
+          }
+        />
+      </Routes>
     </div>
   );
 }
