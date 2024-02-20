@@ -20,6 +20,10 @@
     ],
     "sharedGlobals": []
   },
+  "workspaceLayout": {
+    "appsDir": "apps",
+    "libsDir": "packages"
+  },
   "plugins": [
     {
       "plugin": "@nx/webpack/plugin",

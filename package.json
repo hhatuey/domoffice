@@ -3,7 +3,22 @@
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
+  "packageManager": "yarn@4.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">= 20",
+    "npm": ">= 10"
+  },
   "dependencies": {
+    "@babel/runtime": "^7.23.9",
+    "@xarc/app": "^11.0.8",
+    "@xarc/fastify-server": "^4.0.9",
+    "@xarc/react": "^1.0.4",
+    "@xarc/react-query": "^1.0.5",
+    "@xarc/react-redux": "^1.1.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tslib": "^2.6.2"
@@ -33,6 +48,9 @@
     "@types/react-dom": "18.2.19",
     "@typescript-eslint/eslint-plugin": "^7.0.2",
     "@typescript-eslint/parser": "^7.0.2",
+    "@xarc/app-dev": "^11.0.8",
+    "@xarc/opt-postcss": "^2.0.1",
+    "@xarc/opt-stylus": "^2.0.1",
     "babel-jest": "^29.7.0",
     "cypress": "^13.6.4",
     "eslint": "~8.56.0",
@@ -52,6 +70,5 @@
     "typescript": "~5.3.3",
     "url-loader": "^4.1.1",
     "webpack-cli": "^5.1.4"
-  },
-  "packageManager": "yarn@4.1.0"
+  }
 }
