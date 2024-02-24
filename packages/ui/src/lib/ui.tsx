@@ -1,6 +1,7 @@
 import { Route, Link } from 'react-router-dom';
 
 import styles from './ui.module.css';
+import { ReactSubApp } from '@xarc/react';
 
 /* eslint-disable-next-line */
 export interface UiProps {}
@@ -24,3 +25,7 @@ export function Ui(props: UiProps) {
 }
 
 export default Ui;
+export const subapp: ReactSubApp = {
+  Component: Ui,
+  wantFeatures: [],
+};
