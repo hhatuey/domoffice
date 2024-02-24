@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@domoffice/configuration": ["packages/configuration/src/index.ts"]
+      "@domoffice/configuration": ["packages/configuration/src/index.ts"],
+      "@domoffice/ui": ["packages/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
