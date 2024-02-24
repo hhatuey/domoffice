@@ -13,6 +13,8 @@ import { Settings } from '@domoffice/settings';
 
 import { Profile } from '@domoffice/profile';
 
+import { Feedback } from '@domoffice/feedback';
+
 export function App() {
   return (
     <div>
@@ -28,6 +30,9 @@ export function App() {
         <ul>
           <li>
             <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/feedback">Feedback</Link>
           </li>
           <li>
             <Link to="/profile">Profile</Link>
@@ -56,6 +61,7 @@ export function App() {
             </div>
           }
         />
+        <Route path="/feedback" element={<Feedback />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/home" element={<Home />} />

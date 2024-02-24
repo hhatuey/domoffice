@@ -1,0 +1,29 @@
+{
+  "name": "feedback",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/feedback/src",
+  "projectType": "library",
+  "tags": ["feedback", "core", "core-react"],
+  "targets": {
+    "build": {
+      "executor": "@nx/rollup:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/feedback",
+        "tsConfig": "packages/feedback/tsconfig.lib.json",
+        "project": "packages/feedback/package.json",
+        "entryFile": "packages/feedback/src/index.ts",
+        "external": ["react", "react-dom", "react/jsx-runtime"],
+        "rollupConfig": "@nx/react/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "packages/feedback/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    }
+  }
+}
