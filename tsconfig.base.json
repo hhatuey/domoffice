@@ -17,6 +17,7 @@
     "paths": {
       "@domoffice/configuration": ["packages/configuration/src/index.ts"],
       "@domoffice/home": ["packages/home/src/index.ts"],
+      "@domoffice/settings": ["packages/settings/src/index.ts"],
       "@domoffice/ui": ["packages/ui/src/index.ts"]
     }
   },

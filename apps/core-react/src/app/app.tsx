@@ -9,6 +9,8 @@ import { Ui } from '@domoffice/ui';
 
 import { Home } from '@domoffice/home';
 
+import { Settings } from '@domoffice/settings';
+
 export function App() {
   return (
     <div>
@@ -24,6 +26,9 @@ export function App() {
         <ul>
           <li>
             <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/settings">Settings</Link>
           </li>
           <li>
             <Link to="/home">Home</Link>
@@ -46,6 +51,7 @@ export function App() {
             </div>
           }
         />
+        <Route path="/settings" element={<Settings />} />
         <Route path="/home" element={<Home />} />
         <Route path="/ui" element={<Ui />} />
         <Route
