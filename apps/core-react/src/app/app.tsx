@@ -7,6 +7,8 @@ import { Route, Routes, Link } from 'react-router-dom';
 
 import { Ui } from '@domoffice/ui';
 
+import { Home } from '@domoffice/home';
+
 export function App() {
   return (
     <div>
@@ -22,6 +24,9 @@ export function App() {
         <ul>
           <li>
             <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/home">Home</Link>
           </li>
           <li>
             <Link to="/ui">Ui</Link>
@@ -41,6 +46,7 @@ export function App() {
             </div>
           }
         />
+        <Route path="/home" element={<Home />} />
         <Route path="/ui" element={<Ui />} />
         <Route
           path="/page-2"
