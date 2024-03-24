@@ -31,5 +31,7 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@xarc/app-dev": "^11.0.8"
+  }
 }

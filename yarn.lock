@@ -1553,7 +1553,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.15.4, @babel/runtime@npm:^7.17.9, @babel/runtime@npm:^7.22.6, @babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.23.8, @babel/runtime@npm:^7.23.9, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.6.2, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.8.4":
+"@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.15.4, @babel/runtime@npm:^7.17.9, @babel/runtime@npm:^7.22.6, @babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.23.8, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.6.2, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.8.4":
   version: 7.23.9
   resolution: "@babel/runtime@npm:7.23.9"
   dependencies:
@@ -1701,13 +1701,36 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@domoffice/feedback@workspace:packages/feedback":
+  version: 0.0.0-use.local
+  resolution: "@domoffice/feedback@workspace:packages/feedback"
+  languageName: unknown
+  linkType: soft
+
+"@domoffice/home@workspace:packages/home":
+  version: 0.0.0-use.local
+  resolution: "@domoffice/home@workspace:packages/home"
+  languageName: unknown
+  linkType: soft
+
+"@domoffice/profile@workspace:packages/profile":
+  version: 0.0.0-use.local
+  resolution: "@domoffice/profile@workspace:packages/profile"
+  languageName: unknown
+  linkType: soft
+
+"@domoffice/settings@workspace:packages/settings":
+  version: 0.0.0-use.local
+  resolution: "@domoffice/settings@workspace:packages/settings"
+  languageName: unknown
+  linkType: soft
+
 "@domoffice/source@workspace:.":
   version: 0.0.0-use.local
   resolution: "@domoffice/source@workspace:."
   dependencies:
     "@babel/core": "npm:^7.23.9"
     "@babel/preset-react": "npm:^7.23.3"
-    "@babel/runtime": "npm:^7.23.9"
     "@nx/cypress": "npm:18.0.5"
     "@nx/eslint": "npm:18.0.5"
     "@nx/eslint-plugin": "npm:18.0.5"
@@ -1719,6 +1742,7 @@ __metadata:
     "@nx/webpack": "npm:18.0.5"
     "@nx/workspace": "npm:18.0.5"
     "@pmmmwh/react-refresh-webpack-plugin": "npm:^0.5.11"
+    "@reduxjs/toolkit": "npm:^2.2.1"
     "@rollup/plugin-url": "npm:^7.0.0"
     "@svgr/rollup": "npm:^8.0.1"
     "@svgr/webpack": "npm:^8.1.0"
@@ -1734,7 +1758,6 @@ __metadata:
     "@typescript-eslint/eslint-plugin": "npm:^7.0.2"
     "@typescript-eslint/parser": "npm:^7.0.2"
     "@xarc/app": "npm:^11.0.8"
-    "@xarc/app-dev": "npm:^11.0.8"
     "@xarc/fastify-server": "npm:^4.0.9"
     "@xarc/opt-postcss": "npm:^2.0.1"
     "@xarc/opt-stylus": "npm:^2.0.1"
@@ -2885,6 +2908,26 @@ __metadata:
     webpack-plugin-serve:
       optional: true
   checksum: 10c0/a9c8468417a14a23339e313cff6ddb8029e0637748973070e61d83a2534620b3492b9a42ecf9eb9d63cb709f53c17fe814bc7dd68d64c300db338e9fd7287bc4
+  languageName: node
+  linkType: hard
+
+"@reduxjs/toolkit@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "@reduxjs/toolkit@npm:2.2.1"
+  dependencies:
+    immer: "npm:^10.0.3"
+    redux: "npm:^5.0.1"
+    redux-thunk: "npm:^3.1.0"
+    reselect: "npm:^5.0.1"
+  peerDependencies:
+    react: ^16.9.0 || ^17.0.0 || ^18
+    react-redux: ^7.2.1 || ^8.1.3 || ^9.0.0
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-redux:
+      optional: true
+  checksum: 10c0/675f816b311d6d703259e00c73977c9c5968e41b039d6d149e34e9084d5e6718aff3b692d2b7697974fb57a056687932117da1dd5202d392811d8d4e91d09322
   languageName: node
   linkType: hard
 
@@ -7159,6 +7202,7 @@ __metadata:
   resolution: "core@workspace:apps/core"
   dependencies:
     "@babel/runtime": "npm:^7.17.9"
+    "@xarc/app-dev": "npm:^11.0.8"
   languageName: unknown
   linkType: soft
 
@@ -10938,6 +10982,13 @@ __metadata:
   bin:
     image-size: bin/image-size.js
   checksum: 10c0/655204163af06732f483a9fe7cce9dff4a29b7b2e88f5c957a5852e8143fa750f5e54b1955a2ca83de99c5220dbd680002d0d4e09140b01433520f4d5a0b1f4c
+  languageName: node
+  linkType: hard
+
+"immer@npm:^10.0.3":
+  version: 10.0.4
+  resolution: "immer@npm:10.0.4"
+  checksum: 10c0/da9da59d6e71cf3f2875024b5cfb58874baef3eefec6425483e53163e31ed0ab24bae85cd2829cb7812acb9723075eedb5946654f8bd47ecf38663388e04d3bd
   languageName: node
   linkType: hard
 
@@ -17238,7 +17289,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"redux@npm:>= 4":
+"redux-thunk@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "redux-thunk@npm:3.1.0"
+  peerDependencies:
+    redux: ^5.0.0
+  checksum: 10c0/21557f6a30e1b2e3e470933247e51749be7f1d5a9620069a3125778675ce4d178d84bdee3e2a0903427a5c429e3aeec6d4df57897faf93eb83455bc1ef7b66fd
+  languageName: node
+  linkType: hard
+
+"redux@npm:>= 4, redux@npm:^5.0.1":
   version: 5.0.1
   resolution: "redux@npm:5.0.1"
   checksum: 10c0/b10c28357194f38e7d53b760ed5e64faa317cc63de1fb95bc5d9e127fab956392344368c357b8e7a9bedb0c35b111e7efa522210cfdc3b3c75e5074718e9069c
@@ -17428,6 +17488,13 @@ __metadata:
   version: 1.0.0
   resolution: "requires-port@npm:1.0.0"
   checksum: 10c0/b2bfdd09db16c082c4326e573a82c0771daaf7b53b9ce8ad60ea46aa6e30aaf475fe9b164800b89f93b748d2c234d8abff945d2551ba47bf5698e04cd7713267
+  languageName: node
+  linkType: hard
+
+"reselect@npm:^5.0.1":
+  version: 5.1.0
+  resolution: "reselect@npm:5.1.0"
+  checksum: 10c0/b0ed789f4f6f10dfbd23741823726793384932969aa7ce8f584c882ad87620a02b09b5d1146cd2ea6eaa0953b3fd9f7df22f113893af73f35f28432a8a4294de
   languageName: node
   linkType: hard
 

@@ -7,7 +7,8 @@
 //
 
 import { React, ReactSubApp } from "@xarc/react";
-import { reduxFeature, connect } from "@xarc/react-redux";
+import { reduxFeature, connect, Reducer } from "@xarc/react-redux";
+import { configureStore } from "@reduxjs/toolkit";
 export { reduxReducers } from "./reducers";
 
 const incNumber = () => {
@@ -59,6 +60,14 @@ export const subapp: ReactSubApp = {
       prepare: async (initialState) => {
         return { initialState: initialState || { number: { value: 999 } } };
       },
+      decorators: [
+        {
+          decorate(feat, params) {
+            const store = configureStore({ reducer: params.reducers as Reducer });
+            return { store };
+          },
+        },
+      ],
     }),
   ],
 };

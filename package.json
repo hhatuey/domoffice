@@ -13,7 +13,7 @@
     "npm": ">= 10"
   },
   "dependencies": {
-    "@babel/runtime": "^7.23.9",
+    "@reduxjs/toolkit": "^2.2.1",
     "@xarc/app": "^11.0.8",
     "@xarc/fastify-server": "^4.0.9",
     "@xarc/react": "^1.0.4",
@@ -52,7 +52,6 @@
     "@types/react-dom": "18.2.19",
     "@typescript-eslint/eslint-plugin": "^7.0.2",
     "@typescript-eslint/parser": "^7.0.2",
-    "@xarc/app-dev": "^11.0.8",
     "@xarc/opt-postcss": "^2.0.1",
     "@xarc/opt-stylus": "^2.0.1",
     "babel-jest": "^29.7.0",
